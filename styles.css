@@ -1,7 +1,8 @@
 body {
-    font-family: "Press Start 2P", cursive;
+    font-family: "Pixelify Sans", cursive;
     background-color: #1c1c1c;
     color: #fff;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=240045), auto ;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -18,3 +19,69 @@ body {
     object-fit:cover;
     z-index: -1;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 7rem;
+    margin-bottom: 20px ;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.timer {
+      font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 20px #fff;
+    margin-bottom: 20px;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 20px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.status {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: #1c1c1c 2px 2px 2px;
+
+}
+
+button {
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #e5e7eb;
+    border: 1px solid rgba(255,255,255,0.25);
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=240435), auto;
+   
+    box-shadow: 2px 2px 0px #000;
+    transition: all 0.4s;
+    text-shadow: #1c1c1c 2px 2px 2px;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: translate(-2px , -2px);
+    box-shadow: 4px 4px 0px #000;
+}
+
