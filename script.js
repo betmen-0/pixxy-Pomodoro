@@ -62,6 +62,7 @@ function updateDisplay() {
     document.getElementById("timer").textContent = `${minutes
         .toString()
         .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+        
 }
 
 window.addEventListener(
