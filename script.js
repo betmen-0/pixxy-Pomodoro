@@ -4,13 +4,13 @@ let isRunning = false;
 const audio =
 document.getElementById("bg-music");
 function startTimer() {
-    if (!isRunning) {
+    if (!interval) {
         audio.play();
         isRunning = true;
 
 document.getElementById("status").textContent = "Timer On Duty...";
         interval = setInterval(() => {
-            if (time > 0) {
+            if (time > 1) {
                 time--;
                 updateDisplay();
             } else {
@@ -20,7 +20,7 @@ document.getElementById("status").textContent = "Timer On Duty...";
     document.getElementById("status").textContent = "Time's Up Buddy! Touch Some Grass";
     alert("Time's Up Buddy! Touch Some Grass");
             }
-        }, 1000);
+        }, 900);
     }
 }
 
@@ -44,8 +44,7 @@ function resetTimer() {
     document.getElementById("status").textContent = "Timer Reset! Click Start to Begin";
 }
 
-function openTimePopup() {
-    if (!isRunning) return;
+function openTimePopUp() {
     let minutes = prompt("Enter Your Minutes My Lord:", Math.floor(time / 60));
     let seconds = prompt("Enter Your Seconds My Lord:", time % 60);
 
